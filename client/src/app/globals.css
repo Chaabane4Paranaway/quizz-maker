@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  color: white;
+}
+
+body {
+  background: transparent;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@layer components {
+  .card {
+    @apply bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply bg-violet-600 hover:bg-violet-700 text-white font-medium py-2 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/20 text-white font-medium py-2 rounded-xl transition-colors;
+  }
+
+  .input-field {
+    @apply bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-white/30 focus:bg-white/10 transition-colors;
+  }
+}

@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+**/package-lock.json
+npm-debug.log*
+
+# Build outputs
+dist/
+.next/
+out/
+client/out/
+server/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+data/
+*.db
+*.sqlite
+
+# Temporary
+.tmp/
+temp/
+
+# Build cache
+.turbo/
